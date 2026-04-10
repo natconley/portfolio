@@ -38,8 +38,7 @@
         </section>
         <section id="about">
             <img id="face" src="img/faceimg2.png" alt="image of me, Natalie">
-            <h3>Hi!</h3>
-            <span>I'm Natalie</span>
+            <h3>Hi, I'm Natalie! <span class="emoji">👋</span></h3>
             <div class="p-container">
                 <p>I have a bachelor's degree in Interaction Design and am currently studying frontend development. I
                     enjoy working in the space between design and code, where I can take ideas from research and user
@@ -56,7 +55,7 @@
                 </p>
             </div>
         </section>
-        <section id="projects"></section>
+        <section id="projects">
         <h3>Projects</h3>
         <div class="project">
             <h4>Pokémon Team Builder</h4>
@@ -78,20 +77,31 @@
             <span class="bold">Tech</span>
             <p>Node.js, Express, PostgreSQL, HTML, CSS, JavaScript</p>
         </div>
+        </section>
         <section id="cv">
             <h3>Resume</h3>
             <p>A summary of my background, education, and skills. For a full overview, feel free to download my CV.</p>
             <button id="downloadBtn">Download</button>
         </section>
         <section id="contact">
-            <h3>Contact</h3>
-            <p>Always looking to learn and expand. Feel free to reach out if you'd like to connect or collaborate.</p>
+            <h3>Get in touch</h3>
+            <p>Always looking to learn and expand. Feel free to contact me by email or phone, or send me a message below </p>
             <div class="buttonGroup">
                 <button id="emailBtn">E-mail</button>
                 <button id="phoneBtn">Phone</button>
+                <span class="emoji">👇</span>
+                <form class="message-form">
+                    <input type="text" name="name" id="first-name" placeholder="First Name">
+                    <input type="text" name="surname" id="last-name" placeholder="Last Name">
+                    <input type="email" name="email" id="email-input" placeholder="Email Adress">
+                    <textarea name="message" id="message-area" maxlength="300" rows="10" placeholder="Write your message here"></textarea>
+                    <p id="character-count"></p>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
+    <footer></footer>
 
 
 <script src="main.js"></script>
