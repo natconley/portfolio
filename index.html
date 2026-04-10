@@ -10,19 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Natalie Conley Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>Natalie Conley</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#cv">Resume</a>
-            <a href="#contact">Contact</a>
+        <h1 id="logo">Natalie Conley</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="material-icons">menu</span>
+        </button>
     </header>
     <main>
         <section id="hero">
@@ -54,7 +60,9 @@
         <h3>Projects</h3>
         <div class="project">
             <h4>Pokémon Team Builder</h4>
-            <p>A web application built with JavaScript and data from the PokéAPI, where users can browse Pokémon, view detailed information, and build a team. The project focuses on structuring large amounts of data in a clear and usable way, as well as creating simple logic to support decision-making.</p>
+            <p>A web application built with JavaScript and data from the PokéAPI, where users can browse Pokémon, view
+                detailed information, and build a team. The project focuses on structuring large amounts of data in a
+                clear and usable way, as well as creating simple logic to support decision-making.</p>
             <span class="bold">Role</span>
             <p>Frontend development, UI structure, interaction design</p>
             <span class="bold">Tech</span>
@@ -62,15 +70,31 @@
         </div>
         <div class="project">
             <h4>Infinite Oddities - Inventory System</h4>
-            <p>A concept inventory management system for a fictional store, built to explore CRUD operations, database structure, and how data flows between frontend and backend. The focus was on creating a clear structure and handling relational data in a meaningful way.</p>
+            <p>A concept inventory management system for a fictional store, built to explore CRUD operations, database
+                structure, and how data flows between frontend and backend. The focus was on creating a clear structure
+                and handling relational data in a meaningful way.</p>
             <span class="bold">Role</span>
             <p>Full-stack concept, data structure, interface design</p>
             <span class="bold">Tech</span>
             <p>Node.js, Express, PostgreSQL, HTML, CSS, JavaScript</p>
         </div>
-        <section id="cv"></section>
-        <section id="contact"></section>
+        <section id="cv">
+            <h3>Resume</h3>
+            <p>A summary of my background, education, and skills. For a full overview, feel free to download my CV.</p>
+            <button id="downloadBtn">Download</button>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>Always looking to learn and expand. Feel free to reach out if you'd like to connect or collaborate.</p>
+            <div class="buttonGroup">
+                <button id="emailBtn">E-mail</button>
+                <button id="phoneBtn">Phone</button>
+            </div>
+        </section>
     </main>
+
+
+<script src="main.js"></script>
 </body>
 
 </html>
