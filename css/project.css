@@ -27,6 +27,7 @@ h1 a {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
+    padding: var(--space-md) 0;
 }
 
 .project-hero h2 {
@@ -40,7 +41,7 @@ h1 a {
 
 .project-hero-image {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
     border-radius: var(--radius-md);
     overflow: hidden;
     margin-top: var(--space-md);
