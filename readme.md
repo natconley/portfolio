@@ -1,32 +1,31 @@
-# Hi, I'm Natalie 👋
+# Natalie Conley
 
-I'm an Interaction Design graduate and frontend development student at EC Utbildning with a passion for creating accessible, user-centered web experiences. Currently deepening my JavaScript skills and building my portfolio with various projects.
+Interaction Design graduate and Frontend Development student at EC Utbildning. 
+I work in the space between design and code, bringing UX thinking with me when I build.
 
-## 🔧 Tech Stack
+## Tech Stack
 
-**Frontend:** HTML5, CSS3, JavaScript | Responsive Design  
-**Backend:** Node.js, Express.js, PostgreSQL  
-**UX/UI:** Figma, Adobe XD, User Research  
-**Tools:** Git, GitHub, Agile/Scrum
+**Frontend:** HTML, CSS, JavaScript, React  
+**Backend:** Node.js, Express, PostgreSQL  
+**UX/Design:** Figma, user research, prototyping, usability testing  
+**Tools:** Git, GitHub, Zustand, Docker, Scrum  
 
-## 🚀 Featured Projects
+## Projects
 
-### [Infinite Oddities](link-to-repo)
-Full-stack inventory management system for mystical items. Final project in backend development course for EC Utbildning. 
+### [Infinite Oddities](https://github.com/natconley/Infinite-Oddities)
+Full-stack inventory management system for a fictional curiosity shop. Solo project built with Node.js, Express and PostgreSQL following the Repository Pattern.  
 `Node.js` `Express` `PostgreSQL` `REST API` `Repository Pattern`
 
-### [Quiz Application](link-to-repo)
-Interactive quiz app created in a team, mainly focused on agile project development and work within a team.  
-`JavaScript` `HTML` `CSS` `[other tech used]`
+### [Cinevent](https://github.com/natconley/MovieBooking) · [Live Demo](https://movie-booking-zeta-flame.vercel.app/)
+React booking app for a fictional cinema. Group project where I owned the data pipeline, Zustand stores, MovieCard component, details page and favorites feature.  
+`React` `Zustand` `OMDB API` `TMDB API` `Responsive Design`
 
-### [Booknook](link-to-repo)
-Responsive book website with mobile-first design, final project in HTML and CSS course for EC Utbidlning.  
-`HTML` `CSS` `Responsive Design`
+### [Pokédex Team Builder](https://github.com/natconley/pokemon) · [Live Demo](https://natconley.github.io/pokemon)
+Collaborative Pokédex with a teambuilder page I built end to end. Features team analysis, type coverage, stat balance and Pokémon suggestions.  
+`Vanilla JS` `PokéAPI` `localStorage` `Responsive Design` `Accessibility`
 
-## 📫 Let's Connect
+## Connect
 
-- LinkedIn: [Your LinkedIn URL]
-- Portfolio: [Your portfolio site when ready]
-- Email: Natalieannaconley@gmail.com
-
----
+- Portfolio: https://natconley.github.io/portfolio
+- LinkedIn: https://www.linkedin.com/in/natalie-conley-9254a029b/
+- Email: natalieannaconley@gmail.com
