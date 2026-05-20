@@ -1,6 +1,6 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
-const icon = menuToggle.querySelector('.material.icons');
+const icon = menuToggle.querySelector('.material-icons');
 
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
