@@ -1,0 +1,59 @@
+:root {
+  /* Colors — Warm Air */
+  --color-cream: #F9F6EE;
+  --color-ink: #2C2018;
+  --color-terracotta: #C06030;
+  --color-peach: #F4C4A8;
+  --color-peach-text: #7A3A18;
+  --color-sage: #B8DDD0;
+  --color-sage-text: #2A5248;
+  --color-lemon: #EFE98C;
+  --color-lemon-text: #5A5210;
+  --color-muted: #7A6A58;
+  --color-muted-light: #BFB4A8;
+
+  /* Semantics */
+  --bg: var(--color-cream);
+  --bg-surface: #F2EDE3;
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-muted);
+  --text-tertiary: var(--color-muted-light);
+  --accent: var(--color-terracotta);
+  --border: rgba(44, 32, 24, 0.12);
+
+  /* Typography */
+  --font-display: 'Fraunces', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --text-xs: 0.6875rem;   /* 11px */
+  --text-sm: 0.8125rem;   /* 13px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.25rem;     /* 20px */
+  --text-xl: 1.75rem;     /* 28px */
+  --text-hero: clamp(2rem, 5vw, 3rem);
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.65;
+
+  /* Spacing */
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 2rem;      /* 32px */
+  --space-xl: 4rem;      /* 64px */
+  --space-2xl: 8rem;     /* 128px */
+
+  /* Layout */
+  --max-width: 1100px;
+  --content-width: 680px;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Transitions */
+  --transition: 200ms ease;
+  --transition-slow: 400ms ease;
+}

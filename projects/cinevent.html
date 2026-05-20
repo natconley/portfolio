@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project case study by Natalie Conley">
+    <meta name="author" content="Natalie Conley">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <title>Cinevent — Natalie Conley</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo"><a href="../index.html">natalie ✦</a></h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#cv">Resume</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="material-icons">menu</span>
+        </button>
+    </header>
+
+    <main class="project-page">
+
+        <a href="../index.html#projects" class="back-link">← Projects</a>
+
+        <section class="project-hero">
+            <span class="overhead">React Student Project</span>
+            <h2>Cinevent</h2>
+            <div class="pills">
+                <span class="pill sage">React</span>
+                <span class="pill peach">Zustand</span>
+                <span class="pill lemon">OMDB API</span>
+                <span class="pill sage">TMDB API</span>
+                <span class="pill lemon">Responsive Design</span>
+            </div>
+            <div class="project-hero-image">
+                <img src="../img/projects/cinevent1.png" alt="Screenshot of Cinevent">
+            </div>
+        </section>
+
+        <div class="project-content">
+            <article class="project-body">
+                <section class="content-section">
+                    <h3 class="section-label">About the project</h3>
+                    <p>Cinema isn't dead, at least not if you're going to Cinevent. A fictional cinema selling an
+                        extraordinary film experience, built as a group React project.</p>
+                </section>
+
+                <section class="content-section">
+                    <h3 class="section-label">What I built</h3>
+                    <p>I owned the data pipeline from API to UI. Setting up the OMDB and TMDB API calls, building the
+                        Zustand stores for movies and favorites, and creating the components that tie it together. The
+                        details page, MovieCard, favorites button, favorites page and all movies page were all made by
+                        me.</p>
+                </section>
+                
+                <section class="content-section">
+                    <h3 class="section-label">What I learned</h3>
+                    <div class="paragraph-container">
+                        <p>
+                            This project was my proper introduction to React. JSX clicked quickly, but components
+                            really started to make sense when I had to decide what deserved to be its own component and
+                            what
+                            didn't. MovieCard and putting pages together taught me that.
+                        </p>
+                        <p>
+                            Zustand was a revelation after passing props around. Building the movies and favorites
+                            stores made me understand why shared state exists. Once the data lives in one place,
+                            everything
+                            that needs it just reaches for it.
+                        </p>
+                        <p>
+                            React Router gave the app structure that felt real. Navigating between pages without a
+                            reload is one of those things that sounds simple until actual set up.
+                        </p>
+                        <p>
+                            I also got more comfortable with hooks than I expected. useState for local UI state,
+                            useEffect for fetching on mount. Knowing which one to reach for, and when, was the thing
+                            that took the
+                            most time to feel natural.
+                        </p>
+                    </div>
+                </section>
+            </article>
+
+            <aside class="project-meta">
+                <div class="meta-card">
+                    <dl>
+                        <div class="meta-item">
+                            <dt>Type</dt>
+                            <dd>Group Project</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Year</dt>
+                            <dd>2026</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Role</dt>
+                            <dd>Frontend developer</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Stack</dt>
+                            <dd>React, Zustand, OMDB API, TMDB API</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Live</dt>
+                            <dd><a href="https://movie-booking-zeta-flame.vercel.app/" target="_blank">View demo →</a>
+                            </dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Commits</dt>
+                            <dd><a href="https://github.com/BrigittaCifra/MovieBooking/commits?author=natconley"
+                                    target="_blank">View my commits →</a></dd>
+                        </div>
+                    </dl>
+                    <div class="meta-links">
+                        <a href="https://github.com/natconley/MovieBooking" class="btn-primary" target="_blank">GitHub →</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="other-projects">
+            <h3 class="section-label">Other Projects</h3>
+            <div class="projects-container">
+                <div class="project" onclick="window.location.href='pokemon.html'">
+                    <span class="overhead desktopHidden">Frontend group project</span>
+                    <div class="img-container">
+                        <img class="project-main-image" src="../img/projects/full-team.png"
+                            alt="Pokédex Teambuilder with full team.">
+                    </div>
+                    <div class="project-info-container">
+                        <span class="overhead mobileHidden">Frontend group project</span>
+                        <h4>Pokémon Team Builder</h4>
+                        <div class="pills">
+                            <span class="pill lemon">DOM Manipulation</span>
+                            <span class="pill sage">PokéAPI</span>
+                            <span class="pill peach">Vanilla JS</span>
+                            <span class="pill peach">Responsive Design</span>
+                            <span class="pill lemon">Accessibility</span>
+                        </div>
+                        <p>Gotta build 'em all. A collaborative Pokédex pulling live data from the PokéAPI, with a bonus
+                            teambuilder feature for assembling and analysing your squad.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="window.location.href='infinite-oddities.html'">
+                    <span class="overhead desktopHidden">Full Stack Student Project</span>
+                    <div class="img-container">
+                        <img class="project-main-image" src="../img/projects/IO-products.png">
+                    </div>
+                    <div class="project-info-container">
+                        <span class="overhead mobileHidden">Full Stack Student Project</span>
+                        <h4>Infinite Oddities</h4>
+                        <div class="pills">
+                            <span class="pill peach">Node.js</span>
+                            <span class="pill lemon">PostgreSQL</span>
+                            <span class="pill sage">REST API</span>
+                            <span class="pill sage">Repository Pattern</span>
+                            <span class="pill peach">Express</span>
+                        </div>
+                        <p> An inventory management system for a fictional curiosity shop, built fullstack with Node.js,
+                            Express, and PostgreSQL. Clean architecture, relational database design, and a frontend that
+                            leans
+                            into the strange.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/natconley" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/natalie-conley-9254a029b/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="quirky-container">
+        <span class="footer-star">✦</span>
+        <p class="footer-quirky">Yes, I did spend too long picking the fonts.</p>
+        <span class="footer-star">✦</span>
+        </div>
+        <p class="footer-credit">Natalie Conley · 2025</p>
+    </div>
+    </footer>
+
+    <script src="../main.js"></script>
+
+</body>
+
+</html>

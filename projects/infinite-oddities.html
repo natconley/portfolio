@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project case study by Natalie Conley">
+    <meta name="author" content="Natalie Conley">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <title>Infinite Oddities — Natalie Conley</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1 id="logo"><a href="../index.html">natalie ✦</a></h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#cv">Resume</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="material-icons">menu</span>
+        </button>
+    </header>
+
+    <main class="project-page">
+
+        <a href="../index.html#projects" class="back-link">← Projects</a>
+
+        <section class="project-hero">
+            <span class="overhead">Fullstack Student Project</span>
+            <h2>Infinite Oddities</h2>
+            <div class="pills">
+                <span class="pill peach">Node.js</span>
+                <span class="pill lemon">PostgreSQL</span>
+                <span class="pill sage">REST API</span>
+                <span class="pill lemon">Repository Pattern</span>
+                <span class="pill peach">Express</span>
+            </div>
+            <div class="project-hero-image">
+                <img src="../img/projects/IO-products.png" alt="Screenshot of Infinite Oddities">
+            </div>
+        </section>
+
+        <div class="project-content">
+            <article class="project-body">
+                <section class="content-section">
+                    <h3 class="section-label">About the project</h3>
+                    <p>Infinite Oddities is a full-stack inventory management system for a fictional curiosity shop. Workers can add, edit and delete products and suppliers through a clean interface backed by a relational database.</p>
+                </section>
+
+                <section class="content-section">
+                    <h3 class="section-label">What I built</h3>
+                    <p>Everything, this was a solo project. REST API with Node.js and Express, a PostgreSQL database with relational tables for products and suppliers, and a vanilla JS frontend that talks to it all. The file structure follows the Repository Pattern, separating database logic, business logic and routes so each layer has one clear responsibility.</p>
+                </section>
+
+                <section class="content-section">
+                    <h3 class="section-label">Challenges</h3>
+                    <p>
+                        I had a solid conceptual understanding of how backend systems work before this project. What I didn't have was the feeling of it. Getting the frontend to actually talk to the backend, watching data move from a browser form all the way into a database and back was the moment everything stopped being abstract and started being real.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h3 class="section-label">What I learned</h3>
+                    <p>
+                        PostgreSQL, RESTful API design, and how to structure a backend so it doesn't become a mess. But mostly I learned that understanding something and building something are two very different things, and that the second one is where it actually sticks. I also learned that sometimes, starting over is easier and quicker than going back.
+                    </p>
+                </section>
+            </article>
+
+            <aside class="project-meta">
+                <div class="meta-card">
+                    <dl>
+                        <div class="meta-item">
+                            <dt>Type</dt>
+                            <dd>Individual Project</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Year</dt>
+                            <dd>2025</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Role</dt>
+                            <dd>Fullstack developer</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Stack</dt>
+                            <dd>Node.js, PostgreSQL, REST API, Repository Pattern, Express</dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Live</dt>
+                            <dd>Local setup required
+                            </dd>
+                        </div>
+                    </dl>
+                    <div class="meta-links">
+                        <a href="https://github.com/natconley/Infinite-Oddities" class="btn-primary" target="_blank">GitHub
+                            →</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="other-projects">
+            <h3 class="section-label">Other Projects</h3>
+            <div class="projects-container">
+                <div class="project" onclick="window.location.href='cinevent.html'">
+                    <span class="overhead desktopHidden">React Student Project</span>
+                    <div class="img-container">
+                        <img class="project-main-image" src="../img/projects/cinevent1.png">
+                    </div>
+                    <div class="project-info-container">
+                        <span class="overhead mobileHidden">React student project</span>
+                        <h4>Cinevent</h4>
+                        <div class="pills">
+                            <span class="pill sage">React</span>
+                            <span class="pill peach">Zustand</span>
+                            <span class="pill lemon">OMDB API</span>
+                            <span class="pill sage">TMDB API</span>
+                            <span class="pill lemon">Responsive Design</span>
+                        </div>
+                        <p> Cinema isn't dead. At least not if you're browsing Cinevent. A fictional cinema selling an
+                            extraordinary film experience.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="window.location.href='pokemon.html'">
+                    <span class="overhead desktopHidden">Frontend group project</span>
+                    <div class="img-container">
+                        <img class="project-main-image" src="../img/projects/full-team.png"
+                            alt="Pokédex Teambuilder with full team.">
+                    </div>
+                    <div class="project-info-container">
+                        <span class="overhead mobileHidden">Frontend group project</span>
+                        <h4>Pokémon Team Builder</h4>
+                        <div class="pills">
+                            <span class="pill lemon">DOM Manipulation</span>
+                            <span class="pill sage">PokéAPI</span>
+                            <span class="pill peach">Vanilla JS</span>
+                            <span class="pill peach">Responsive Design</span>
+                            <span class="pill lemon">Accessibility</span>
+                        </div>
+                        <p>Gotta build 'em all. A collaborative Pokédex pulling live data from the PokéAPI, with a bonus
+                            teambuilder feature for assembling and analysing your squad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/natconley" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/natalie-conley-9254a029b/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="quirky-container">
+        <span class="footer-star">✦</span>
+        <p class="footer-quirky">Yes, I did spend too long picking the fonts.</p>
+        <span class="footer-star">✦</span>
+        </div>
+        <p class="footer-credit">Natalie Conley · 2025</p>
+    </div>
+    </footer>
+
+    <script src="../main.js"></script>
+
+</body>
+
+</html>

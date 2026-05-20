@@ -30,5 +30,3 @@ Responsive book website with mobile-first design, final project in HTML and CSS 
 - Email: Natalieannaconley@gmail.com
 
 ---
-
-💼 Currently seeking internship opportunities for winter 2027.

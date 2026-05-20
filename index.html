@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Website for showcasing the portfolio of ux designer, interaction designer and frontend developer Natalie Conley">
     <meta name="author" content="Natalie Conley">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Natalie Conley Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1 id="logo">Natalie Conley</h1>
+        <h1 id="logo">natalie<span> </span><span class="logo-star">✦</span></h1>
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#about">About</a></li>
@@ -30,81 +34,200 @@
             <span class="material-icons">menu</span>
         </button>
     </header>
+
     <main>
         <section id="hero">
-            <h2>Frontend Developer in training with a background in Interaction Design</h2>
-            <p>I combine UX thinking with frontend development to create user-centered digital experiences, from
-                research and ideas to implementation.</p>
+            <h2>Half designer, half developer, fully <span class="italic">invested.</span></h2>
+            <p class="hero-tagline">Frontend student with a background in interaction design. I think about why just as
+                much as how.</p>
+            <a href="#projects" class="btn-primary">View projects →</a>
         </section>
+
         <section id="about">
-            <img id="face" src="img/faceimg2.png" alt="image of me, Natalie">
-            <h3>Hi, I'm Natalie! <span class="emoji">👋</span></h3>
+            <h3 class="section-label">About</h3>
             <div class="p-container">
-                <p>I have a bachelor's degree in Interaction Design and am currently studying frontend development. I
-                    enjoy working in the space between design and code, where I can take ideas from research and user
-                    needs all the way to a working product.
-                </p>
-                <p>
-                    My background includes user research, usability testing, and iterative design. Today, I'm expanding
-                    my technical skills in JavaScript and modern web development, with the goal of building solutions
-                    that are both functional and intuitive.
-                </p>
-                <p>
-                    I'm especially interested in creating structured, user-friendly interfaces and being part of a
-                    process where design decisions are grounded in real user needs.
-                </p>
+                <p>My backpack is full of sketchbooks, sticky notes, wireframes and commit messages. Pull up a chair
+                    while I unpack.</p>
+                <span class="divider-star">✦</span>
+                <p>I have a bachelor's in Interaction Design and I'm currently studying frontend development. Somewhere
+                    along the way I realised I didn't just want to design the experience, I wanted to build it too.</p>
+                <span class="divider-star">✦</span>
+                <p>That means I think about the person using what I build, not just the code that powers it. I ask why a
+                    lot. Sometimes it's annoying. Usually it helps.</p>
             </div>
         </section>
+
         <section id="projects">
-        <h3>Projects</h3>
-        <div class="project">
-            <h4>Pokémon Team Builder</h4>
-            <p>A web application built with JavaScript and data from the PokéAPI, where users can browse Pokémon, view
-                detailed information, and build a team. The project focuses on structuring large amounts of data in a
-                clear and usable way, as well as creating simple logic to support decision-making.</p>
-            <span class="bold">Role</span>
-            <p>Frontend development, UI structure, interaction design</p>
-            <span class="bold">Tech</span>
-            <p>JavaScript, HTML, CSS, REST API</p>
-        </div>
-        <div class="project">
-            <h4>Infinite Oddities - Inventory System</h4>
-            <p>A concept inventory management system for a fictional store, built to explore CRUD operations, database
-                structure, and how data flows between frontend and backend. The focus was on creating a clear structure
-                and handling relational data in a meaningful way.</p>
-            <span class="bold">Role</span>
-            <p>Full-stack concept, data structure, interface design</p>
-            <span class="bold">Tech</span>
-            <p>Node.js, Express, PostgreSQL, HTML, CSS, JavaScript</p>
-        </div>
-        </section>
-        <section id="cv">
-            <h3>Resume</h3>
-            <p>A summary of my background, education, and skills. For a full overview, feel free to download my CV.</p>
-            <button id="downloadBtn">Download</button>
-        </section>
-        <section id="contact">
-            <h3>Get in touch</h3>
-            <p>Always looking to learn and expand. Feel free to contact me by email or phone, or send me a message below </p>
-            <div class="buttonGroup">
-                <button id="emailBtn">E-mail</button>
-                <button id="phoneBtn">Phone</button>
-                <span class="emoji">👇</span>
-                <form class="message-form">
-                    <input type="text" name="name" id="first-name" placeholder="First Name">
-                    <input type="text" name="surname" id="last-name" placeholder="Last Name">
-                    <input type="email" name="email" id="email-input" placeholder="Email Adress">
-                    <textarea name="message" id="message-area" maxlength="300" rows="10" placeholder="Write your message here"></textarea>
-                    <p id="character-count"></p>
-                    <button type="submit">Send Message</button>
-                </form>
+            <h3 class="section-label">Projects</h3>
+            <div id="project-container">
+                <div class="project" onclick="window.location.href='projects/cinevent.html'">
+                    <span class="overhead desktopHidden">React Student Project</span>
+                    <div class="img-container">
+                        <img class="project-main-image" src="/img/projects/cinevent1.png">
+                    </div>
+                    <div class="project-info-container">
+                        <span class="overhead mobileHidden">React student project</span>
+                        <h4>Cinevent</h4>
+                        <div class="pills">
+                            <span class="pill sage">React</span>
+                            <span class="pill peach">Zustand</span>
+                            <span class="pill lemon">OMDB API</span>
+                            <span class="pill sage">TMDB API</span>
+                            <span class="pill lemon">Responsive Design</span>
+                        </div>
+                        <p> Cinema isn't dead. At least not if you're browsing Cinevent. A fictional cinema selling an
+                            extraordinary film experience.</p>
+                    </div>
+                </div>
+                <div class="project" onclick="window.location.href='projects/pokemon.html'">
+                    <span class="overhead desktopHidden">Frontend group project</span>
+                    <div class="img-container">
+                        <img class="project-main-image" src="../img/projects/full-team.png"
+                            alt="Pokédex Teambuilder with full team.">
+                    </div>
+                    <div class="project-info-container">
+                        <span class="overhead mobileHidden">Frontend group project</span>
+                        <h4>Pokémon Team Builder</h4>
+                        <div class="pills">
+                            <span class="pill lemon">DOM Manipulation</span>
+                            <span class="pill sage">PokéAPI</span>
+                            <span class="pill peach">Vanilla JS</span>
+                            <span class="pill peach">Responsive Design</span>
+                            <span class="pill lemon">Accessibility</span>
+                        </div>
+                        <p>Gotta build 'em all. A collaborative Pokédex pulling live data from the PokéAPI, with a bonus
+                            teambuilder feature for assembling and analysing your squad.</p>
+                    </div>
+                </div>
+
+                <div class="project" onclick="window.location.href='projects/infinite-oddities.html'">
+                    <span class="overhead desktopHidden">Full Stack Student Project</span>
+                    <div class="img-container">
+                        <img class="project-main-image" src="/img/projects/IO-products.png">
+                    </div>
+                    <div class="project-info-container">
+                        <span class="overhead mobileHidden">Full Stack Student Project</span>
+                        <h4>Infinite Oddities</h4>
+                        <div class="pills">
+                            <span class="pill peach">Node.js</span>
+                            <span class="pill lemon">PostgreSQL</span>
+                            <span class="pill sage">REST API</span>
+                            <span class="pill sage">Repository Pattern</span>
+                            <span class="pill peach">Express</span>
+                        </div>
+                        <p> An inventory management system for a fictional curiosity shop, built fullstack with Node.js,
+                            Express, and PostgreSQL. Clean architecture, relational database design, and a frontend that
+                            leans into the strange.
+                        </p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="cv">
+            <header class="cv-header">
+                <h3 class="section-label">Resume</h3>
+                <div class="section-description">
+                    <p>A summary of my background, education, and skills. For a full overview, feel free to download my
+                        CV.
+                    </p>
+                    <a href="files/Natalie_Conley_CV.pdf" download class="btn-primary">Download</a>
+                </div>
+            </header>
+            <div class="cv-grid">
+                <article class="cv-section">
+                    <h4>Education</h4>
+                    <div class="cv-item">
+                        <h5>Frontend Development <span>EC Utbildning</span></h5>
+                        <p class="meta">Aug 2025 - Jun 2027, ongoing</p>
+                        <p>Two-year vocational programme covering HTML, CSS, JavaScript, React, Node.js, Express,
+                            PostgreSQL, TypeScript and Angular, with Git/GitHub used throughout. Includes agile project
+                            methods and full-stack development.</p>
+                    </div>
+                    <div class="cv-item">
+                        <h5>Interaction Design, BSc <span>Linnaeus University</span></h5>
+                        <p class="meta">180 ECTS · 2020-2024</p>
+                        <p>Programme covering UX processes, user research, prototyping, usability testing and
+                            human-computer interaction. Thesis: a study on improving the usability of AI-based
+                            recommendation systems in e-commerce.</p>
+                    </div>
+                </article>
+                <article class="cv-section">
+                    <h4>Experience</h4>
+
+                    <div class="cv-item">
+                        <h5>UX Design Intern <span>RISE Research Institutes of Sweden</span>
+                        </h5>
+                        <p class="meta">Sep - Dec 2023</p>
+                        <p>Embedded in an interdisciplinary team at RISE's maritime division, working on digital tools to improve passenger evacuation on cruise ships. Owned the design process for an accessibility-adapted mobile app. From research, needs analysis and iterative prototyping to usability testing. Findings and progress were documented and presented continuously to the team.
+                        </p>
+                    </div>
+                </article>
+                <article class="cv-section">
+                    <h4>Skills</h4>
+
+                    <div class="skill-group">
+                        <h5>Frontend</h5>
+                        <p>HTML, CSS, JavaScript, React</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h5>Backend</h5>
+                        <p>Node.js, Express, PostgreSQL</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h5>UX / Design</h5>
+                        <p>Figma, prototyping, usability testing</p>
+                    </div>
+                </article>
+                <div class="grid-grouping">
+                    <article class="cv-section">
+                        <h4>Tools</h4>
+                        <p>Git, GitHub, VS Code, Docker</p>
+                    </article>
+                    <article class="cv-section">
+                        <h4>Languages</h4>
+                        <p>Swedish (native), English (native)</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3 class="section-label">Get in touch</h3>
+            <div class="contact-info">
+                <p>Got a project, a question, or just want to say hi? My inbox is open.
+                </p>
+                <a href="mailto:natalieannaconley@gmail.com" id="btn-email" class="btn-secondary">Email →</a>
+            </div>
+            <form class="message-form" action="https://formspree.io/f/mykvkrwk" method="POST">
+                <input type="text" name="name" id="first-name" placeholder="First Name">
+                <input type="text" name="surname" id="last-name" placeholder="Last Name">
+                <input type="email" id="email-input" name="email" placeholder="Email Address">
+                <textarea name="message" id="message-area" maxlength="300" rows="10"
+                    placeholder="Write your message here"></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
         </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/natconley" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/natalie-conley-9254a029b/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="quirky-container">
+        <span class="footer-star">✦</span>
+        <p class="footer-quirky">Yes, I did spend too long picking the fonts.</p>
+        <span class="footer-star">✦</span>
+        </div>
+        <p class="footer-credit">Natalie Conley · 2025</p>
+    </div>
+    </footer>
 
 
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
