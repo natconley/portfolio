@@ -93,7 +93,7 @@ header {
     right: 0;
     left: 0;
     width: 100%;
-    background: var(--bg-surface);
+    background: var(--bg);
     padding: 1rem;
 }
 
