@@ -221,15 +221,16 @@ h2 {
     gap: 5px;
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
-    padding: var(--space-md);
+    padding: var(--space-md) var(--space-md) var(--space-lg);
     width: 100%;
     margin: 0 auto;
     background-color: var(--bg-surface);
     cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+    position: relative;
 }
 
 #project-container {
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--space-md);
@@ -266,38 +267,24 @@ h2 {
     flex-wrap: wrap;
 }
 
-.lemon {
-    background-color: var(--color-lemon);
-    color: var(--color-lemon-text);
-}
-
-.sage {
-    background-color: var(--color-sage);
-    color: var(--color-sage-text);
-}
-
 .peach {
     background-color: var(--color-peach);
     color: var(--color-peach-text);
 }
 
 .overhead {
-    color: var(--text-secondary);
-    font-weight: 400;
-}
-
-.mobileHidden {
-    display: none;
-}
-
-.project {
-    transition: transform var(--transition), box-shadow var(--transition);
+    color: var(--text-tertiary);
+    font-size: var(--text-xs);
+    position: absolute;
+    bottom: 10px;
 }
 
 .project:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(44, 32, 24, 0.08);
 }
+
+
 /*Resume---------------------------------------------------------*/
 h5 {
     font-size: 1.2rem;
@@ -306,14 +293,10 @@ h5 {
 .cv-grid {
     display: grid;
     gap: 1.25rem;
-    /*
-    justify-self: center;
-    align-content: center;*/
 }
 
 .cv-header {
-    display: grid;
-    
+    display: grid;  
 }
 
 .cv-header p {
@@ -324,7 +307,6 @@ h5 {
 
 .section-description {
   display: grid;
- 
 }
 
 .section-description p {
@@ -361,8 +343,6 @@ h5 {
   font-weight: 400;
 }
 
-
-
 .cv-item {
     margin-bottom: 1rem;
 }
@@ -386,34 +366,6 @@ h5 {
     max-width: 500px;
     padding: 1rem 0;
     align-self: center;
-}
-
-i {
-    color: var(--secondary-color);
-    font-size: 34px;
-}
-
-.stackGroup span {
-    opacity: 0;
-    display: block;
-    font-size: 0.75rem;
-    color: var(--secondary-color);
-    position: absolute;
-    bottom: -22px;
-    transition: opacity 0.2s ease;
-}
-
-.stackGroup:hover span {
-    opacity: 1;
-
-}
-
-.stackGroup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 
@@ -447,7 +399,6 @@ i {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
-    padding-bottom: var(--space-md);
 }
 
 #contact {
@@ -527,6 +478,12 @@ footer {
     }
 }
 
+@media (min-width: 630px) {
+    .overhead {
+        right: 1rem;
+    }
+}
+
 @media (min-width: 728px) {
 
     /*Navigation --------------------------------------------------*/
@@ -561,7 +518,7 @@ footer {
 
 
     /*Projects---------------------------------------------------------*/
-
+/*
 .project h4 {
     font-family: var(--font-display);
   font-size: var(--text-xl);
@@ -569,7 +526,7 @@ footer {
   color: var(--text-primary);
   margin: 0 0 var(--space-sm);
   min-height: 2lh;
-}
+}*/
     .desktopHidden {
         display: none;
     }
