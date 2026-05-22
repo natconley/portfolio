@@ -50,6 +50,7 @@ main > section {
     transition: background var(--transition);
     width: fit-content;
     height: fit-content;
+    margin-top: var(--space-sm);
 }
 
 .btn-primary:hover {
@@ -84,6 +85,11 @@ header {
     align-items: center;
     padding: 0.5rem;
     position: relative;
+}
+
+.material-icons {
+    color: var(--text-primary);
+    padding-top: 3px;
 }
 
 .nav {
@@ -299,6 +305,7 @@ h5 {
     display: grid;  
 }
 
+
 .cv-header p {
     margin-top: 0.75rem;
     color: var(--text-secondary);
@@ -312,7 +319,6 @@ h5 {
 .section-description p {
     margin: 0;
 }
-
 
 .cv-section {
     padding: 1rem;

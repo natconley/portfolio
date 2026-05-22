@@ -22,18 +22,21 @@ menuToggle.setAttribute(
 );
 
 // lightbox - gallery
-document.querySelectorAll('.gallery-img').forEach(img => {
-    img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
+if (lightbox) {
+    document.querySelectorAll('.gallery-img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+        });
     });
-});
 
-document.querySelector('.lightbox-close').addEventListener('click', () => {
-    lightbox.classList.remove('active');
-});
+    document.querySelector('.lightbox-close').addEventListener('click', () => {
+        lightbox.classList.remove('active');
+    });
 
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) lightbox.classList.remove('active');
-});
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) lightbox.classList.remove('active');
+    });
+
+}
